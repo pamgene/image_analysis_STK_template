@@ -1,8 +1,6 @@
+## STK Image Analysis Template
 
-## STK image analysis template.
+- Version 0.2.2 and earlier versions: enrichment contains Array Layouts 86312, 86402, 86412, 87102
+- Version 0.2.3: enrichment contains Array Layouts 86312, 86402, 86412, 87102, 87202
 
-Zip folder with the images including the array layout
-
-upload zipfile in Tercen
-
-run first box in image analysis STK template, choose object tab and select the zipfile
+Prior to running, upload zip folder (contains: ImageResults folder, correct Array Layout) with upload file button.

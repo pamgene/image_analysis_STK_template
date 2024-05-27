@@ -1,0 +1,203 @@
+{
+ "kind": "CubeQueryTableSchema",
+ "id": "7dbfd9ec7f9a7640d16d3bd173914cffd72aa541b34b607d54fdbf5a1c90d492",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "column",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "ds1.ID.size_in_bytes",
+   "value": "190120"
+  },
+  {
+   "kind": "Pair",
+   "key": "ds1.grdImageNameUsed.size_in_bytes",
+   "value": "383144"
+  },
+  {
+   "kind": "Pair",
+   "key": "documentId.size_in_bytes",
+   "value": "410496"
+  },
+  {
+   "kind": "Pair",
+   "key": "ds0.Image.size_in_bytes",
+   "value": "383136"
+  },
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "7dbfd9ec7f9a7640d16d3bd173914cffd72aa541b34b607d54fdbf5a1c90d492"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 9120,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "967ee812-3ef4-4aca-8cd3-bdbb359e8ac0",
+   "name": "documentId",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "cacbc71c-74bd-4eff-8358-2e4c78af6afc",
+   "name": "ds1.grdImageNameUsed",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "c9f98e1a-8959-43d3-8b8c-09c05e713b2c",
+   "name": "ds0.Image",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "3171bbaf-6f08-44ef-ac0f-72312bb561bd",
+   "name": "ds1.spotRow",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "734b9372-e91d-4e49-a6f9-6bc32f9fcf4e",
+   "name": "ds1.spotCol",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "fd3376ce-77b8-41fd-bc50-9b7f6442bf49",
+   "name": "ds1.ID",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/7d/bf/7dbfd9ec7f9a7640d16d3bd173914cffd72aa541b34b607d54fdbf5a1c90d492",
+ "relation": {
+  "kind": "Relation",
+  "id": "9761e7a3-0468-4caa-851b-7a79e0cd9d91"
+ },
+ "queryHash": "33975aeb33a65a679bff83706704549c",
+ "queryTableType": "column",
+ "query": {
+  "kind": "CubeQuery",
+  "relation": {
+   "kind": "Relation",
+   "id": "806838be-ad64-490f-99c4-f557ecf92ce8"
+  },
+  "colColumns": [],
+  "rowColumns": [],
+  "axisQueries": [],
+  "filters": {
+   "kind": "Filters",
+   "removeNaN": true,
+   "namedFilters": []
+  },
+  "operatorSettings": {
+   "kind": "OperatorSettings",
+   "namespace": "",
+   "operatorRef": {
+    "kind": "OperatorRef",
+    "name": "",
+    "version": "",
+    "operatorId": "",
+    "operatorKind": "",
+    "propertyValues": [],
+    "url": {
+     "kind": "Url",
+     "uri": ""
+    },
+    "operatorSpec": {
+     "kind": "OperatorSpec",
+     "ontologyUri": "",
+     "ontologyVersion": "",
+     "inputSpecs": [],
+     "outputSpecs": []
+    }
+   },
+   "environment": [],
+   "operatorModel": {
+    "kind": "OperatorModel"
+   }
+  },
+  "qtHash": "",
+  "columnHash": "",
+  "rowHash": ""
+ }
+}

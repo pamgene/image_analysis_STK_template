@@ -161,9 +161,9 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "",
+    "taskId": "33975aeb33a65a679bff83706703105d",
     "taskState": {
-     "kind": "InitState"
+     "kind": "DoneState"
     }
    },
    "description": "",
@@ -387,8 +387,108 @@
     "taskId": ""
    },
    "computedRelation": {
-    "kind": "Relation",
-    "id": "aaa3ea26-d6b0-4305-a1f2-1b73d0b8221e"
+    "kind": "CompositeRelation",
+    "id": "979597a3-4593-4e22-b20c-e1dd9ef111cd",
+    "joinOperators": [
+     {
+      "kind": "JoinOperator",
+      "joinType": "",
+      "leftPair": {
+       "kind": "ColumnPair",
+       "lColumns": [
+        "documentId"
+       ],
+       "rColumns": [
+        "documentId"
+       ]
+      },
+      "rightRelation": {
+       "kind": "RenameRelation",
+       "id": "d56a0bc8-5f8e-4922-ae25-3865f3637127",
+       "relation": {
+        "kind": "CompositeRelation",
+        "id": "70875e62-7dd3-4cf2-980d-267037aeccca",
+        "joinOperators": [
+         {
+          "kind": "JoinOperator",
+          "joinType": "",
+          "leftPair": {
+           "kind": "ColumnPair",
+           "lColumns": [
+            ".ci"
+           ],
+           "rColumns": [
+            "5f096175b009051b94c0700704f5ab6ca3b0648a1fb7871907cc29da1d64df5c._rids"
+           ]
+          },
+          "rightRelation": {
+           "kind": "SimpleRelation",
+           "id": "5f096175b009051b94c0700704f5ab6ca3b0648a1fb7871907cc29da1d64df5c",
+           "index": 0
+          }
+         }
+        ],
+        "mainRelation": {
+         "kind": "SimpleRelation",
+         "id": "ec69cf375eb9a46095dc290e5b3d2473e0e5d7cad7fd975c66b0e884f46c5be3",
+         "index": 0
+        }
+       },
+       "inNames": [
+        "ds0.documentId",
+        "ds0.path",
+        "ds0.Image",
+        "ds0.DateTime",
+        "ds0.Barcode",
+        "ds0.Col",
+        "ds0.Cycle",
+        "ds0.Exposure Time",
+        "ds0.Filter",
+        "ds0.PS12",
+        "ds0.Row",
+        "ds0.Temperature",
+        "ds0.Timestamp",
+        "ds0.Instrument Unit",
+        "ds0.RunId",
+        ".ci",
+        "ec69cf375eb9a46095dc290e5b3d2473e0e5d7cad7fd975c66b0e884f46c5be3._rids",
+        "ec69cf375eb9a46095dc290e5b3d2473e0e5d7cad7fd975c66b0e884f46c5be3.tlbId",
+        "documentId",
+        "5f096175b009051b94c0700704f5ab6ca3b0648a1fb7871907cc29da1d64df5c._rids",
+        "5f096175b009051b94c0700704f5ab6ca3b0648a1fb7871907cc29da1d64df5c.tlbId",
+        "documentId"
+       ],
+       "outNames": [
+        "ds0.documentId",
+        "ds0.path",
+        "ds0.Image",
+        "ds0.DateTime",
+        "ds0.Barcode",
+        "ds0.Col",
+        "ds0.Cycle",
+        "ds0.Exposure Time",
+        "ds0.Filter",
+        "ds0.PS12",
+        "ds0.Row",
+        "ds0.Temperature",
+        "ds0.Timestamp",
+        "ds0.Instrument Unit",
+        "ds0.RunId",
+        ".ci",
+        "ec69cf375eb9a46095dc290e5b3d2473e0e5d7cad7fd975c66b0e884f46c5be3._rids",
+        "ec69cf375eb9a46095dc290e5b3d2473e0e5d7cad7fd975c66b0e884f46c5be3.tlbId",
+        "documentId",
+        "5f096175b009051b94c0700704f5ab6ca3b0648a1fb7871907cc29da1d64df5c._rids",
+        "5f096175b009051b94c0700704f5ab6ca3b0648a1fb7871907cc29da1d64df5c.tlbId",
+        "ds0..documentId"
+       ]
+      }
+     }
+    ],
+    "mainRelation": {
+     "kind": "Relation",
+     "id": "1401b6a1-da8f-4981-aa0e-3bb3846773a6"
+    }
    },
    "parentDataStepId": ""
   },
@@ -428,9 +528,9 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "",
+    "taskId": "33975aeb33a65a679bff837067038837",
     "taskState": {
-     "kind": "InitState"
+     "kind": "DoneState"
     }
    },
    "description": "",
@@ -801,8 +901,124 @@
     "taskId": ""
    },
    "computedRelation": {
-    "kind": "Relation",
-    "id": "ea29224b-351a-46cf-bfd2-00bb783adf48"
+    "kind": "CompositeRelation",
+    "id": "1fafe43b-cd00-4fd3-be85-05d1f1f2d234",
+    "joinOperators": [
+     {
+      "kind": "JoinOperator",
+      "joinType": "",
+      "leftPair": {
+       "kind": "ColumnPair",
+       "lColumns": [
+        "documentId",
+        "ds0.Barcode",
+        "ds0.Row",
+        "ds0.Exposure Time"
+       ],
+       "rColumns": [
+        "documentId",
+        "ds0.Barcode",
+        "ds0.Row",
+        "ds0.Exposure Time"
+       ]
+      },
+      "rightRelation": {
+       "kind": "RenameRelation",
+       "id": "61751218-692d-4522-a110-6b83658f3e09",
+       "relation": {
+        "kind": "CompositeRelation",
+        "id": "635212ca-37d0-4acb-88ef-02e7cc4459e4",
+        "joinOperators": [
+         {
+          "kind": "JoinOperator",
+          "joinType": "",
+          "leftPair": {
+           "kind": "ColumnPair",
+           "lColumns": [
+            ".ci"
+           ],
+           "rColumns": [
+            "1bb51f37aad102e3aaad02dd7790f2e72b66da563861642d87554306e77616c7._rids"
+           ]
+          },
+          "rightRelation": {
+           "kind": "SimpleRelation",
+           "id": "1bb51f37aad102e3aaad02dd7790f2e72b66da563861642d87554306e77616c7",
+           "index": 0
+          }
+         }
+        ],
+        "mainRelation": {
+         "kind": "SimpleRelation",
+         "id": "ba2bec0b5f3e2b0179a6544431d6b6dd0c45b36348904330ee89c62c8b5ab6be",
+         "index": 0
+        }
+       },
+       "inNames": [
+        ".ci",
+        "ds1.IsReference",
+        "ds1.ID",
+        "ds1.spotRow",
+        "ds1.spotCol",
+        "ds1.grdXFixedPosition",
+        "ds1.grdYFixedPosition",
+        "ds1.gridX",
+        "ds1.gridY",
+        "ds1.diameter",
+        "ds1.manual",
+        "ds1.bad",
+        "ds1.empty",
+        "ds1.grdRotation",
+        "ds1.grdImageNameUsed",
+        "ba2bec0b5f3e2b0179a6544431d6b6dd0c45b36348904330ee89c62c8b5ab6be._rids",
+        "ba2bec0b5f3e2b0179a6544431d6b6dd0c45b36348904330ee89c62c8b5ab6be.tlbId",
+        "documentId",
+        "ds0.Barcode",
+        "ds0.Row",
+        "ds0.Exposure Time",
+        "1bb51f37aad102e3aaad02dd7790f2e72b66da563861642d87554306e77616c7._rids",
+        "1bb51f37aad102e3aaad02dd7790f2e72b66da563861642d87554306e77616c7.tlbId",
+        "documentId",
+        "ds0.Barcode",
+        "ds0.Row",
+        "ds0.Exposure Time"
+       ],
+       "outNames": [
+        ".ci",
+        "ds1.IsReference",
+        "ds1.ID",
+        "ds1.spotRow",
+        "ds1.spotCol",
+        "ds1.grdXFixedPosition",
+        "ds1.grdYFixedPosition",
+        "ds1.gridX",
+        "ds1.gridY",
+        "ds1.diameter",
+        "ds1.manual",
+        "ds1.bad",
+        "ds1.empty",
+        "ds1.grdRotation",
+        "ds1.grdImageNameUsed",
+        "ba2bec0b5f3e2b0179a6544431d6b6dd0c45b36348904330ee89c62c8b5ab6be._rids",
+        "ba2bec0b5f3e2b0179a6544431d6b6dd0c45b36348904330ee89c62c8b5ab6be.tlbId",
+        "documentId",
+        "ds0.Barcode",
+        "ds0.Row",
+        "ds0.Exposure Time",
+        "1bb51f37aad102e3aaad02dd7790f2e72b66da563861642d87554306e77616c7._rids",
+        "1bb51f37aad102e3aaad02dd7790f2e72b66da563861642d87554306e77616c7.tlbId",
+        "ds1..documentId",
+        "ds1..Barcode",
+        "ds1..Row",
+        "ds1..Exposure Time"
+       ]
+      }
+     }
+    ],
+    "mainRelation": {
+     "kind": "Relation",
+     "id": "9678f079-7309-49a7-bde9-255ffd42f713"
+    }
    },
    "parentDataStepId": ""
   },
@@ -844,7 +1060,7 @@
     "kind": "StepState",
     "taskId": "",
     "taskState": {
-     "kind": "InitState"
+     "kind": "DoneState"
     }
    },
    "description": "",
@@ -902,7 +1118,53 @@
     "factorType": "double",
     "gatherType": ""
    },
-   "meltedAttributes": []
+   "meltedAttributes": [
+    {
+     "kind": "Attribute",
+     "name": "ds1.grdXFixedPosition",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "ds1.grdYFixedPosition",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "ds1.gridX",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "ds1.gridY",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "ds1.diameter",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "ds1.manual",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "ds1.bad",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "ds1.empty",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "ds1.grdRotation",
+     "type": "double"
+    }
+   ]
   },
   {
    "kind": "DataStep",
@@ -940,9 +1202,9 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "",
+    "taskId": "33975aeb33a65a679bff8370670607c4",
     "taskState": {
-     "kind": "InitState"
+     "kind": "DoneState"
     }
    },
    "description": "",
@@ -1349,8 +1611,138 @@
     "taskId": ""
    },
    "computedRelation": {
-    "kind": "Relation",
-    "id": "c704b01b-883b-46c3-ba26-a8e5e30d3ed7"
+    "kind": "CompositeRelation",
+    "id": "bbb7dea5-baec-40a4-95b5-e415371c7cfd",
+    "joinOperators": [
+     {
+      "kind": "JoinOperator",
+      "joinType": "",
+      "leftPair": {
+       "kind": "ColumnPair",
+       "lColumns": [
+        "documentId",
+        "ds1.grdImageNameUsed",
+        "ds0.Image",
+        "ds1.spotRow",
+        "ds1.spotCol",
+        "ds1.ID"
+       ],
+       "rColumns": [
+        "documentId",
+        "ds1.grdImageNameUsed",
+        "ds0.Image",
+        "ds1.spotRow",
+        "ds1.spotCol",
+        "ds1.ID"
+       ]
+      },
+      "rightRelation": {
+       "kind": "RenameRelation",
+       "id": "eb74f100-f887-4727-8029-7dc1dad321e4",
+       "relation": {
+        "kind": "CompositeRelation",
+        "id": "0f7d50f0-6fa5-4182-8d8e-51afde3fa6d5",
+        "joinOperators": [
+         {
+          "kind": "JoinOperator",
+          "joinType": "",
+          "leftPair": {
+           "kind": "ColumnPair",
+           "lColumns": [
+            ".ci"
+           ],
+           "rColumns": [
+            "4409d6ed419bd574904f6c239d911e3e11e921c854202fff6f7198ed59c85ad2._rids"
+           ]
+          },
+          "rightRelation": {
+           "kind": "SimpleRelation",
+           "id": "4409d6ed419bd574904f6c239d911e3e11e921c854202fff6f7198ed59c85ad2",
+           "index": 0
+          }
+         }
+        ],
+        "mainRelation": {
+         "kind": "SimpleRelation",
+         "id": "a600e9d6de121714f8fc6db7ffe1904cb041f87b1518aec8902b110d946daa39",
+         "index": 0
+        }
+       },
+       "inNames": [
+        "ds3.Mean_SigmBg",
+        "ds3.Median_SigmBg",
+        "ds3.Mean_Signal",
+        "ds3.Median_Signal",
+        "ds3.Mean_Background",
+        "ds3.Median_Background",
+        "ds3.Signal_Saturation",
+        "ds3.Fraction_Ignored",
+        "ds3.Diameter",
+        "ds3.gridX",
+        "ds3.gridY",
+        "ds3.Position_Offset",
+        "ds3.Empty_Spot",
+        "ds3.Bad_Spot",
+        "ds3.Replaced_Spot",
+        ".ci",
+        "a600e9d6de121714f8fc6db7ffe1904cb041f87b1518aec8902b110d946daa39._rids",
+        "a600e9d6de121714f8fc6db7ffe1904cb041f87b1518aec8902b110d946daa39.tlbId",
+        "documentId",
+        "ds1.grdImageNameUsed",
+        "ds0.Image",
+        "ds1.spotRow",
+        "ds1.spotCol",
+        "ds1.ID",
+        "4409d6ed419bd574904f6c239d911e3e11e921c854202fff6f7198ed59c85ad2._rids",
+        "4409d6ed419bd574904f6c239d911e3e11e921c854202fff6f7198ed59c85ad2.tlbId",
+        "documentId",
+        "ds1.grdImageNameUsed",
+        "ds0.Image",
+        "ds1.spotRow",
+        "ds1.spotCol",
+        "ds1.ID"
+       ],
+       "outNames": [
+        "ds3.Mean_SigmBg",
+        "ds3.Median_SigmBg",
+        "ds3.Mean_Signal",
+        "ds3.Median_Signal",
+        "ds3.Mean_Background",
+        "ds3.Median_Background",
+        "ds3.Signal_Saturation",
+        "ds3.Fraction_Ignored",
+        "ds3.Diameter",
+        "ds3.gridX",
+        "ds3.gridY",
+        "ds3.Position_Offset",
+        "ds3.Empty_Spot",
+        "ds3.Bad_Spot",
+        "ds3.Replaced_Spot",
+        ".ci",
+        "a600e9d6de121714f8fc6db7ffe1904cb041f87b1518aec8902b110d946daa39._rids",
+        "a600e9d6de121714f8fc6db7ffe1904cb041f87b1518aec8902b110d946daa39.tlbId",
+        "documentId",
+        "ds1.grdImageNameUsed",
+        "ds0.Image",
+        "ds1.spotRow",
+        "ds1.spotCol",
+        "ds1.ID",
+        "4409d6ed419bd574904f6c239d911e3e11e921c854202fff6f7198ed59c85ad2._rids",
+        "4409d6ed419bd574904f6c239d911e3e11e921c854202fff6f7198ed59c85ad2.tlbId",
+        "ds3..documentId",
+        "ds3..grdImageNameUsed",
+        "ds3..Image",
+        "ds3..spotRow",
+        "ds3..spotCol",
+        "ds3..ID"
+       ]
+      }
+     }
+    ],
+    "mainRelation": {
+     "kind": "Relation",
+     "id": "f525da3a-1419-4574-a3a5-3f610331b3da"
+    }
    },
    "parentDataStepId": ""
   },
@@ -1385,16 +1777,75 @@
     "kind": "StepState",
     "taskId": "",
     "taskState": {
-     "kind": "InitState"
+     "kind": "DoneState"
     }
    },
    "description": "",
    "model": {
     "kind": "TableStepModel",
     "relation": {
-     "kind": "UnionRelation",
-     "id": "39235cbd-aedc-4d95-9089-d5a0b42f2bef",
-     "relations": []
+     "kind": "RenameRelation",
+     "id": "rename_8e35819b-8c5d-48fb-90f2-550822b899e2",
+     "relation": {
+      "kind": "InMemoryRelation",
+      "id": "f1bdb123-e0d7-4a3f-9244-b225cb1d5912",
+      "inMemoryTable": {
+       "kind": "Table",
+       "nRows": 1,
+       "properties": {
+        "kind": "TableProperties",
+        "name": "",
+        "sortOrder": [],
+        "ascending": true
+       },
+       "columns": [
+        {
+         "kind": "Column",
+         "id": "documentId",
+         "name": "documentId",
+         "type": "string",
+         "nRows": 1,
+         "size": -1,
+         "metaData": {
+          "kind": "ColumnSchemaMetaData",
+          "sort": [],
+          "ascending": true,
+          "quartiles": [],
+          "properties": []
+         },
+         "values": [
+          "d6b182e9-dc6a-4734-8e44-c1fad1e674a6"
+         ]
+        },
+        {
+         "kind": "Column",
+         "id": ".documentId",
+         "name": ".documentId",
+         "type": "string",
+         "nRows": 1,
+         "size": -1,
+         "metaData": {
+          "kind": "ColumnSchemaMetaData",
+          "sort": [],
+          "ascending": true,
+          "quartiles": [],
+          "properties": []
+         },
+         "values": [
+          "710415415_710415416_710415419-on 1300STKlysv11-run 221028125720.zip"
+         ]
+        }
+       ]
+      }
+     },
+     "inNames": [
+      "documentId",
+      ".documentId"
+     ],
+     "outNames": [
+      "documentId",
+      ".documentId"
+     ]
     }
    }
   },
@@ -1434,9 +1885,9 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "",
+    "taskId": "33975aeb33a65a679bff83706704040e",
     "taskState": {
-     "kind": "InitState"
+     "kind": "DoneState"
     }
    },
    "description": "",
@@ -1843,8 +2294,130 @@
     "taskId": ""
    },
    "computedRelation": {
-    "kind": "Relation",
-    "id": "883cf176-682f-4c15-88fd-3f8763633f9e"
+    "kind": "CompositeRelation",
+    "id": "dc9aa19b-2b39-480c-88cb-1261908dca0a",
+    "joinOperators": [
+     {
+      "kind": "JoinOperator",
+      "joinType": "",
+      "leftPair": {
+       "kind": "ColumnPair",
+       "lColumns": [
+        "documentId",
+        "ds1.grdImageNameUsed",
+        "ds0.Image",
+        "ds1.spotRow",
+        "ds1.spotCol",
+        "ds1.ID"
+       ],
+       "rColumns": [
+        "documentId",
+        "ds1.grdImageNameUsed",
+        "ds0.Image",
+        "ds1.spotRow",
+        "ds1.spotCol",
+        "ds1.ID"
+       ]
+      },
+      "rightRelation": {
+       "kind": "RenameRelation",
+       "id": "4a90fd70-cf09-406d-9e7d-fc4618ee88d8",
+       "relation": {
+        "kind": "CompositeRelation",
+        "id": "13f14f16-5f7e-4a67-8bb5-37b50b2fdacc",
+        "joinOperators": [
+         {
+          "kind": "JoinOperator",
+          "joinType": "",
+          "leftPair": {
+           "kind": "ColumnPair",
+           "lColumns": [
+            ".ci"
+           ],
+           "rColumns": [
+            "7dbfd9ec7f9a7640d16d3bd173914cffd72aa541b34b607d54fdbf5a1c90d492._rids"
+           ]
+          },
+          "rightRelation": {
+           "kind": "SimpleRelation",
+           "id": "7dbfd9ec7f9a7640d16d3bd173914cffd72aa541b34b607d54fdbf5a1c90d492",
+           "index": 0
+          }
+         }
+        ],
+        "mainRelation": {
+         "kind": "SimpleRelation",
+         "id": "82e68d6ef1807eae9fe595973b9fe7657012293f597fe5cd05a1cdadb4e4d8db",
+         "index": 0
+        }
+       },
+       "inNames": [
+        ".ci",
+        "ds2.gridX",
+        "ds2.gridY",
+        "ds2.grdXFixedPosition",
+        "ds2.grdYFixedPosition",
+        "ds2.diameter",
+        "ds2.manual",
+        "ds2.bad",
+        "ds2.empty",
+        "ds2.grdRotation",
+        "ds2.grdImageNameUsed",
+        "ds2.Image",
+        "82e68d6ef1807eae9fe595973b9fe7657012293f597fe5cd05a1cdadb4e4d8db._rids",
+        "82e68d6ef1807eae9fe595973b9fe7657012293f597fe5cd05a1cdadb4e4d8db.tlbId",
+        "documentId",
+        "ds1.grdImageNameUsed",
+        "ds0.Image",
+        "ds1.spotRow",
+        "ds1.spotCol",
+        "ds1.ID",
+        "7dbfd9ec7f9a7640d16d3bd173914cffd72aa541b34b607d54fdbf5a1c90d492._rids",
+        "7dbfd9ec7f9a7640d16d3bd173914cffd72aa541b34b607d54fdbf5a1c90d492.tlbId",
+        "documentId",
+        "ds1.grdImageNameUsed",
+        "ds0.Image",
+        "ds1.spotRow",
+        "ds1.spotCol",
+        "ds1.ID"
+       ],
+       "outNames": [
+        ".ci",
+        "ds2.gridX",
+        "ds2.gridY",
+        "ds2.grdXFixedPosition",
+        "ds2.grdYFixedPosition",
+        "ds2.diameter",
+        "ds2.manual",
+        "ds2.bad",
+        "ds2.empty",
+        "ds2.grdRotation",
+        "ds2.grdImageNameUsed",
+        "ds2.Image",
+        "82e68d6ef1807eae9fe595973b9fe7657012293f597fe5cd05a1cdadb4e4d8db._rids",
+        "82e68d6ef1807eae9fe595973b9fe7657012293f597fe5cd05a1cdadb4e4d8db.tlbId",
+        "documentId",
+        "ds1.grdImageNameUsed",
+        "ds0.Image",
+        "ds1.spotRow",
+        "ds1.spotCol",
+        "ds1.ID",
+        "7dbfd9ec7f9a7640d16d3bd173914cffd72aa541b34b607d54fdbf5a1c90d492._rids",
+        "7dbfd9ec7f9a7640d16d3bd173914cffd72aa541b34b607d54fdbf5a1c90d492.tlbId",
+        "ds2..documentId",
+        "ds2..grdImageNameUsed",
+        "ds2..Image",
+        "ds2..spotRow",
+        "ds2..spotCol",
+        "ds2..ID"
+       ]
+      }
+     }
+    ],
+    "mainRelation": {
+     "kind": "Relation",
+     "id": "ca8a67e2-dd87-47b1-8116-a7ae65369911"
+    }
    },
    "parentDataStepId": ""
   },
@@ -1886,7 +2459,7 @@
     "kind": "StepState",
     "taskId": "",
     "taskState": {
-     "kind": "InitState"
+     "kind": "DoneState"
     }
    },
    "description": "",
@@ -1944,7 +2517,53 @@
     "factorType": "double",
     "gatherType": ""
    },
-   "meltedAttributes": []
+   "meltedAttributes": [
+    {
+     "kind": "Attribute",
+     "name": "ds2.gridX",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "ds2.gridY",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "ds2.grdXFixedPosition",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "ds2.grdYFixedPosition",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "ds2.diameter",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "ds2.manual",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "ds2.bad",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "ds2.empty",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "ds2.grdRotation",
+     "type": "double"
+    }
+   ]
   },
   {
    "kind": "DataStep",
@@ -1982,9 +2601,9 @@
    },
    "state": {
     "kind": "StepState",
-    "taskId": "",
+    "taskId": "33975aeb33a65a679bff83706706cffb",
     "taskState": {
-     "kind": "InitState"
+     "kind": "DoneState"
     }
    },
    "description": "",
@@ -2195,7 +2814,7 @@
     "rowTable": {
      "kind": "CrosstabTable",
      "cellSize": 21.6,
-     "offset": 0,
+     "offset": 35,
      "graphicalFactors": [
       {
        "kind": "GraphicalFactor",
@@ -2292,7 +2911,7 @@
         "kind": "Rectangle",
         "extent": {
          "kind": "Point",
-         "x": 76.0,
+         "x": 41.0,
          "y": 30.0
         },
         "topLeft": {
@@ -2313,7 +2932,7 @@
         "kind": "Rectangle",
         "extent": {
          "kind": "Point",
-         "x": 120.0,
+         "x": 33.0,
          "y": 30.0
         },
         "topLeft": {
@@ -2376,7 +2995,7 @@
         "kind": "Rectangle",
         "extent": {
          "kind": "Point",
-         "x": 31.0,
+         "x": 235.0,
          "y": 30.0
         },
         "topLeft": {
@@ -2397,7 +3016,7 @@
         "kind": "Rectangle",
         "extent": {
          "kind": "Point",
-         "x": 120.0,
+         "x": 119.0,
          "y": 30.0
         },
         "topLeft": {
@@ -2411,14 +3030,14 @@
        "kind": "GraphicalFactor",
        "factor": {
         "kind": "Factor",
-        "name": "js0.SeqMatch",
+        "name": "js0.PepProtein_SeqMatch",
         "type": "string"
        },
        "rectangle": {
         "kind": "Rectangle",
         "extent": {
          "kind": "Point",
-         "x": 120.0,
+         "x": 112.0,
          "y": 30.0
         },
         "topLeft": {
@@ -2432,14 +3051,14 @@
        "kind": "GraphicalFactor",
        "factor": {
         "kind": "Factor",
-        "name": "js0.UniprotID",
+        "name": "js0.PepProtein_UniprotName",
         "type": "string"
        },
        "rectangle": {
         "kind": "Rectangle",
         "extent": {
          "kind": "Point",
-         "x": 130.0,
+         "x": 98.0,
          "y": 30.0
         },
         "topLeft": {
@@ -2453,14 +3072,14 @@
        "kind": "GraphicalFactor",
        "factor": {
         "kind": "Factor",
-        "name": "js0.UniprotName",
+        "name": "js0.PepProtein_UniprotID",
         "type": "string"
        },
        "rectangle": {
         "kind": "Rectangle",
         "extent": {
          "kind": "Point",
-         "x": 150.0,
+         "x": 113.0,
          "y": 30.0
         },
         "topLeft": {
@@ -2474,14 +3093,14 @@
        "kind": "GraphicalFactor",
        "factor": {
         "kind": "Factor",
-        "name": "js0.SeqSimilarity",
+        "name": "js0.PepProtein_SeqSimilarity",
         "type": "double"
        },
        "rectangle": {
         "kind": "Rectangle",
         "extent": {
          "kind": "Point",
-         "x": 170.0,
+         "x": 67.0,
          "y": 30.0
         },
         "topLeft": {
@@ -2541,7 +3160,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "6ccdad07-b677-4ae0-86bd-806430ab811c"
+    "id": "2f626eff-1e66-4e69-abb9-745290f0d20d"
    },
    "parentDataStepId": ""
   },
@@ -3120,7 +3739,7 @@
    "kind": "TableStep",
    "id": "539f94ca-18cc-4066-9389-3093ad250ffe",
    "groupId": "",
-   "name": "enrichment_86402_86412_87102_arrays.csv",
+   "name": "enrichment_86312_86402_86412_87102_87202_arrays.csv",
    "inputs": [],
    "outputs": [
     {
@@ -3134,12 +3753,12 @@
     "kind": "Rectangle",
     "extent": {
      "kind": "Point",
-     "x": 278.2297058105469,
+     "x": 361.80963134765625,
      "y": 55.0
     },
     "topLeft": {
      "kind": "Point",
-     "x": 1186.505,
+     "x": 1146.7150372314454,
      "y": 776.5
     }
    },
@@ -3155,33 +3774,35 @@
     "kind": "TableStepModel",
     "relation": {
      "kind": "RenameRelation",
-     "id": "rename_af71db16af576589caa54bf951caf045",
+     "id": "rename_33975aeb33a65a679bff83706705d3b4",
      "relation": {
       "kind": "SimpleRelation",
-      "id": "b407c733751561b45f14c580adf03159030ff20475be849d83bfd39da42a13e6",
+      "id": "b83fad9592317e4216f9b446980ccd996b47fad18727ffd8ab704cedbb0e8fbd",
       "index": 0
      },
      "inNames": [
       "ID",
       "Sequence",
-      "SeqMatch",
-      "UniprotName",
-      "UniprotID",
-      "SeqSimilarity",
+      "PepProtein_SeqMatch",
+      "PepProtein_UniprotName",
+      "PepProtein_UniprotID",
+      "PepProtein_SeqSimilarity",
       "family",
-      "b407c733751561b45f14c580adf03159030ff20475be849d83bfd39da42a13e6._rids",
-      "b407c733751561b45f14c580adf03159030ff20475be849d83bfd39da42a13e6.tlbId"
+      "chip_num",
+      "entrezid",
+      "b83fad9592317e4216f9b446980ccd996b47fad18727ffd8ab704cedbb0e8fbd._rids"
      ],
      "outNames": [
       "ID",
       "Sequence",
-      "SeqMatch",
-      "UniprotName",
-      "UniprotID",
-      "SeqSimilarity",
+      "PepProtein_SeqMatch",
+      "PepProtein_UniprotName",
+      "PepProtein_UniprotID",
+      "PepProtein_SeqSimilarity",
       "family",
-      "rowId",
-      "tableId"
+      "chip_num",
+      "entrezid",
+      "rowId"
      ]
     }
    }
@@ -3230,7 +3851,7 @@
     "kind": "StepState",
     "taskId": "",
     "taskState": {
-     "kind": "InitState"
+     "kind": "DoneState"
     }
    },
    "description": "",
@@ -3253,13 +3874,64 @@
     "rightPrefix": "js0",
     "joinType": ""
    },
-   "rightAttributes": []
+   "rightAttributes": [
+    {
+     "kind": "Attribute",
+     "name": "ID",
+     "type": "string"
+    },
+    {
+     "kind": "Attribute",
+     "name": "Sequence",
+     "type": "string"
+    },
+    {
+     "kind": "Attribute",
+     "name": "PepProtein_SeqMatch",
+     "type": "string"
+    },
+    {
+     "kind": "Attribute",
+     "name": "PepProtein_UniprotName",
+     "type": "string"
+    },
+    {
+     "kind": "Attribute",
+     "name": "PepProtein_UniprotID",
+     "type": "string"
+    },
+    {
+     "kind": "Attribute",
+     "name": "PepProtein_SeqSimilarity",
+     "type": "double"
+    },
+    {
+     "kind": "Attribute",
+     "name": "family",
+     "type": "string"
+    },
+    {
+     "kind": "Attribute",
+     "name": "chip_num",
+     "type": "string"
+    },
+    {
+     "kind": "Attribute",
+     "name": "entrezid",
+     "type": "string"
+    },
+    {
+     "kind": "Attribute",
+     "name": "rowId",
+     "type": "int32"
+    }
+   ]
   }
  ],
  "offset": {
   "kind": "Point",
-  "x": -464.0,
-  "y": -206.0
+  "x": -456.0,
+  "y": -413.0
  },
  "scale": 1.0
 }
