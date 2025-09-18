@@ -1,0 +1,352 @@
+{
+ "kind": "TableSchema",
+ "id": "2fbc9960a463e72a5b6566acd0580ac05af5b7c6cf0b6e2ee62102b53be181cc",
+ "isDeleted": false,
+ "rev": "",
+ "description": "",
+ "name": "row",
+ "acl": {
+  "kind": "Acl",
+  "owner": "",
+  "aces": []
+ },
+ "createdDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "lastModifiedDate": {
+  "kind": "Date",
+  "value": ""
+ },
+ "urls": [],
+ "tags": [],
+ "meta": [
+  {
+   "kind": "Pair",
+   "key": "js0.PepProtein_SeqMatch.size_in_bytes",
+   "value": "259496"
+  },
+  {
+   "kind": "Pair",
+   "key": "ds0.Instrument Unit.size_in_bytes",
+   "value": "254624"
+  },
+  {
+   "kind": "Pair",
+   "key": "js0.PepProtein_UniprotName.size_in_bytes",
+   "value": "163496"
+  },
+  {
+   "kind": "Pair",
+   "key": "js0.entrezid.size_in_bytes",
+   "value": "154480"
+  },
+  {
+   "kind": "Pair",
+   "key": "js0.PepProtein_UniprotID.size_in_bytes",
+   "value": "178312"
+  },
+  {
+   "kind": "Pair",
+   "key": "js0.Sequence.size_in_bytes",
+   "value": "263440"
+  },
+  {
+   "kind": "Pair",
+   "key": "ds1.ID.size_in_bytes",
+   "value": "251800"
+  },
+  {
+   "kind": "Pair",
+   "key": "ds0.Barcode.size_in_bytes",
+   "value": "218256"
+  },
+  {
+   "kind": "Pair",
+   "key": "ds0.RunId.size_in_bytes",
+   "value": "545496"
+  },
+  {
+   "kind": "Pair",
+   "key": "hidden",
+   "value": "true"
+  },
+  {
+   "kind": "Pair",
+   "key": "SHA256",
+   "value": "2fbc9960a463e72a5b6566acd0580ac05af5b7c6cf0b6e2ee62102b53be181cc"
+  }
+ ],
+ "url": {
+  "kind": "Url",
+  "uri": ""
+ },
+ "version": "",
+ "isPublic": false,
+ "projectId": "",
+ "folderId": "",
+ "nRows": 12120,
+ "columns": [
+  {
+   "kind": "ColumnSchema",
+   "id": "7a0d218e-c1d8-440f-9bbc-5c886aa0ed46",
+   "name": "ds0.Instrument Unit",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "74747f4b-895e-45ab-bd36-0ec11cf00eeb",
+   "name": "ds0.RunId",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "5d0b9641-a0b4-4a82-8c67-902120a653a3",
+   "name": "ds0.Barcode",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "9ae037dd-eb5e-4271-ba24-bd6dedef57a5",
+   "name": "ds0.Row",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "b86e9fbf-25f9-4145-b376-61b631294f47",
+   "name": "ds2..spotRow",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "e03ea9cb-0643-4339-9a49-7ca412cb956a",
+   "name": "ds2..spotCol",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "ccae5ae9-16a9-4d29-ab24-2eca51729a2a",
+   "name": "ds0.Exposure Time",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "bfe3f859-dc43-4ebb-8e3f-3fb29c4c1dd5",
+   "name": "ds0.Cycle",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "f55a6184-ea37-4fb1-b922-d34ebb9605ff",
+   "name": "ds1.ID",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "95bbe466-ace0-4922-b68c-e509a0f04dc7",
+   "name": "js0.Sequence",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "5f2b8e72-b0e9-493f-86ea-cc85a1f6a65f",
+   "name": "js0.PepProtein_SeqMatch",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "f7456810-dd85-4e2d-8417-6fcbdc303282",
+   "name": "js0.PepProtein_UniprotName",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "7e999d89-20c8-4581-b6e9-54c57b7fe4aa",
+   "name": "js0.PepProtein_UniprotID",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "436c3beb-fdee-4d9d-9c69-03f27b23e6d3",
+   "name": "js0.entrezid",
+   "type": "string",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "fd51f759-69e7-40fa-9cc2-d5ad14d86b45",
+   "name": "js0.PepProtein_SeqSimilarity",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "e8aec389-9b48-4b4a-a11d-fe4d687def5c",
+   "name": "ds3.Median_SigmBg",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  },
+  {
+   "kind": "ColumnSchema",
+   "id": "a458dd08-b2c8-4119-a80c-58fd0c5d1100",
+   "name": "ds3.Signal_Saturation",
+   "type": "double",
+   "nRows": 0,
+   "size": -1,
+   "metaData": {
+    "kind": "ColumnSchemaMetaData",
+    "sort": [],
+    "ascending": true,
+    "quartiles": [],
+    "properties": []
+   }
+  }
+ ],
+ "dataDirectory": "data/2f/bc/2fbc9960a463e72a5b6566acd0580ac05af5b7c6cf0b6e2ee62102b53be181cc",
+ "relation": {
+  "kind": "Relation",
+  "id": "461154bc-922a-4bdb-bee1-3d2d91f52144"
+ },
+ "size": 1563032
+}

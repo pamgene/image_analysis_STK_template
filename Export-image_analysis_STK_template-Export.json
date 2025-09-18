@@ -1,10 +1,10 @@
 {
- "kind": "FileDocument",
- "id": "README.md",
+ "kind": "TableSchema",
+ "id": "7",
  "isDeleted": false,
  "rev": "",
  "description": "",
- "name": "README.md",
+ "name": "Export-image_analysis_STK_template-Export",
  "acl": {
   "kind": "Acl",
   "owner": "",
@@ -29,14 +29,13 @@
  "isPublic": false,
  "projectId": "",
  "folderId": "",
- "dataUri": "lfs/52/5a/8505cd6991cae21b0953ca438f8773077684bbf7ba7d20cf24bafb5f8640",
- "metadata": {
-  "kind": "FileMetadata",
-  "contentType": "",
-  "cacheControl": "",
-  "contentEncoding": "",
-  "contentLanguage": "",
-  "md5Hash": ""
+ "nRows": 0,
+ "columns": [],
+ "dataDirectory": "",
+ "relation": {
+  "kind": "SimpleRelation",
+  "id": "2fbc9960a463e72a5b6566acd0580ac05af5b7c6cf0b6e2ee62102b53be181cc",
+  "index": 0
  },
- "size": 394
+ "size": 0
 }

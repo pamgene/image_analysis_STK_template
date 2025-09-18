@@ -34,7 +34,7 @@
  "version": "",
  "isPublic": false,
  "projectId": "",
- "folderId": "5",
+ "folderId": "4",
  "nRows": 516,
  "columns": [
   {
@@ -177,5 +177,6 @@
  "relation": {
   "kind": "Relation",
   "id": "80f513da-2b9a-4de5-bedd-38b45f498fbe"
- }
+ },
+ "size": 72032
 }
