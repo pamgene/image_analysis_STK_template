@@ -1,10 +1,10 @@
 {
  "kind": "TableSchema",
- "id": "42a3a70128e07d3655356e4565af5e3120208609cf56855766ef229766a107bf",
+ "id": "ab10f34fec7e7c851dc646b616ce7d2cbb1ab7013d840949631f86f1d0d86bc2",
  "isDeleted": false,
  "rev": "",
  "description": "",
- "name": "enrichment_86312_86402_86412_87102_87202_arrays.csv",
+ "name": "enrichment_86312_86402_86412_87102_87202.csv",
  "acl": {
   "kind": "Acl",
   "owner": "",
@@ -24,7 +24,7 @@
   {
    "kind": "Pair",
    "key": "SHA256",
-   "value": "42a3a70128e07d3655356e4565af5e3120208609cf56855766ef229766a107bf"
+   "value": "ab10f34fec7e7c851dc646b616ce7d2cbb1ab7013d840949631f86f1d0d86bc2"
   }
  ],
  "url": {
@@ -39,7 +39,7 @@
  "columns": [
   {
    "kind": "ColumnSchema",
-   "id": "b74fa9a9-1081-4c5f-98bd-cda8db5163cb",
+   "id": "20d08816-191d-4df4-b349-bee6b5170cd1",
    "name": "ID",
    "type": "string",
    "nRows": 0,
@@ -54,7 +54,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "042749fb-7b64-4026-b2d2-d4904cc8ad6f",
+   "id": "68eb29fa-09b6-46c4-affe-53307233fd1d",
    "name": "Sequence",
    "type": "string",
    "nRows": 0,
@@ -69,7 +69,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "355af215-f807-4ec7-b38b-2413c8df309b",
+   "id": "193c4a90-c685-4bb3-b128-7a61fca010b8",
    "name": "PepProtein_SeqMatch",
    "type": "string",
    "nRows": 0,
@@ -84,7 +84,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "eba3719f-0403-4b26-8119-0b7cad506981",
+   "id": "e4b98bcc-e220-4d85-a557-917086ed93e3",
    "name": "PepProtein_UniprotName",
    "type": "string",
    "nRows": 0,
@@ -99,7 +99,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "53eaf8e2-1bb5-418e-b366-ac2b6dc71884",
+   "id": "49f931a1-1411-40dc-b294-399200aab041",
    "name": "PepProtein_UniprotID",
    "type": "string",
    "nRows": 0,
@@ -114,7 +114,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "15c2758b-f81f-48e0-8efa-aa4eb9da7f4e",
+   "id": "86cae865-1f3e-4636-9aa5-c333cf5b39e2",
    "name": "PepProtein_SeqSimilarity",
    "type": "double",
    "nRows": 0,
@@ -129,7 +129,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "1859a512-4801-4dd3-a222-423185f5d7ac",
+   "id": "b2622087-cde9-4244-bd1e-9607de8062ff",
    "name": "family",
    "type": "string",
    "nRows": 0,
@@ -144,7 +144,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "ca64a4a0-a810-4c24-97ac-ddcace9e821a",
+   "id": "c8b6da4d-ec3f-47b3-9a30-604078246f2b",
    "name": "chip_num",
    "type": "string",
    "nRows": 0,
@@ -159,7 +159,7 @@
   },
   {
    "kind": "ColumnSchema",
-   "id": "1527c972-de4b-4dbc-94e1-6fcfee18dfba",
+   "id": "1f896efe-2837-4118-9e99-88d5aa523275",
    "name": "entrezid",
    "type": "string",
    "nRows": 0,
@@ -173,10 +173,10 @@
    }
   }
  ],
- "dataDirectory": "data/42/a3/42a3a70128e07d3655356e4565af5e3120208609cf56855766ef229766a107bf",
+ "dataDirectory": "data/ab/10/ab10f34fec7e7c851dc646b616ce7d2cbb1ab7013d840949631f86f1d0d86bc2",
  "relation": {
   "kind": "Relation",
-  "id": "80f513da-2b9a-4de5-bedd-38b45f498fbe"
+  "id": "37076ada-f519-47bf-abad-be7ee8650747"
  },
- "size": 72032
+ "size": 72024
 }
