@@ -34,7 +34,7 @@
  "version": "",
  "isPublic": false,
  "projectId": "",
- "folderId": "4",
+ "folderId": "5",
  "nRows": 516,
  "columns": [
   {
@@ -50,7 +50,8 @@
     "ascending": true,
     "quartiles": [],
     "properties": []
-   }
+   },
+   "storageSize": 0.0
   },
   {
    "kind": "ColumnSchema",
@@ -65,7 +66,8 @@
     "ascending": true,
     "quartiles": [],
     "properties": []
-   }
+   },
+   "storageSize": 0.0
   },
   {
    "kind": "ColumnSchema",
@@ -80,7 +82,8 @@
     "ascending": true,
     "quartiles": [],
     "properties": []
-   }
+   },
+   "storageSize": 0.0
   },
   {
    "kind": "ColumnSchema",
@@ -95,7 +98,8 @@
     "ascending": true,
     "quartiles": [],
     "properties": []
-   }
+   },
+   "storageSize": 0.0
   },
   {
    "kind": "ColumnSchema",
@@ -110,7 +114,8 @@
     "ascending": true,
     "quartiles": [],
     "properties": []
-   }
+   },
+   "storageSize": 0.0
   },
   {
    "kind": "ColumnSchema",
@@ -125,7 +130,8 @@
     "ascending": true,
     "quartiles": [],
     "properties": []
-   }
+   },
+   "storageSize": 0.0
   },
   {
    "kind": "ColumnSchema",
@@ -140,7 +146,8 @@
     "ascending": true,
     "quartiles": [],
     "properties": []
-   }
+   },
+   "storageSize": 0.0
   },
   {
    "kind": "ColumnSchema",
@@ -155,7 +162,8 @@
     "ascending": true,
     "quartiles": [],
     "properties": []
-   }
+   },
+   "storageSize": 0.0
   },
   {
    "kind": "ColumnSchema",
@@ -170,7 +178,8 @@
     "ascending": true,
     "quartiles": [],
     "properties": []
-   }
+   },
+   "storageSize": 0.0
   }
  ],
  "dataDirectory": "data/ab/10/ab10f34fec7e7c851dc646b616ce7d2cbb1ab7013d840949631f86f1d0d86bc2",
@@ -178,5 +187,6 @@
   "kind": "Relation",
   "id": "37076ada-f519-47bf-abad-be7ee8650747"
  },
- "size": 72024
+ "size": 72024,
+ "storageSize": 72024.0
 }
