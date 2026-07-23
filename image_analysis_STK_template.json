@@ -1,6 +1,6 @@
 {
  "kind": "Workflow",
- "id": "6",
+ "id": "3",
  "isDeleted": false,
  "rev": "",
  "description": "image analysis STK",
@@ -389,7 +389,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "07b421e1-c8cf-443d-af65-188d9bee242e"
+    "id": "6443de00-ac9b-44f4-be29-3633f4a75b47"
    },
    "parentDataStepId": ""
   },
@@ -423,7 +423,7 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 976.5548046875001,
+     "x": 977.5548046875001,
      "y": 406.5
     }
    },
@@ -643,7 +643,7 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 120
+     "nRows": 1
     },
     "filters": {
      "kind": "Filters",
@@ -676,9 +676,9 @@
      "namespace": "ds1",
      "operatorRef": {
       "kind": "OperatorRef",
-      "name": "pamsoft_grid_operator",
-      "version": "1.4.1",
-      "operatorId": "1",
+      "name": "pamsoft_grid_rust_operator",
+      "version": "0.4.0",
+      "operatorId": "6",
       "operatorKind": "DockerOperator",
       "propertyValues": [
        {
@@ -709,7 +709,7 @@
        {
         "kind": "PropertyValue",
         "name": "Edge Sensitivity",
-        "value": "0.05"
+        "value": "0.01"
        },
        {
         "kind": "PropertyValue",
@@ -729,13 +729,40 @@
       ],
       "url": {
        "kind": "Url",
-       "uri": "https://github.com/pamgene/pamsoft_grid_operator"
+       "uri": "https://github.com/tercen/pamsoft_grid_rust_operator"
       },
       "operatorSpec": {
        "kind": "OperatorSpec",
-       "ontologyUri": "",
-       "ontologyVersion": "",
-       "inputSpecs": [],
+       "ontologyUri": "https://tercen.com/_ontology/tercen",
+       "ontologyVersion": "0.0.1",
+       "inputSpecs": [
+        {
+         "kind": "CrosstabSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "Documents",
+           "type": "",
+           "description": "documentId column(s) referencing the input file(s): the image ZIP (and optionally the array-layout text file as a second documentId). 1 or 2 columns.",
+           "ontologyMapping": "documentId",
+           "crosstabMapping": "column",
+           "cardinality": "1..2",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Image",
+           "type": "",
+           "description": "Filename stem (no extension) of each image inside the ZIP. One row per image; rows sharing a .ci form a chip group.",
+           "ontologyMapping": "sample",
+           "crosstabMapping": "column",
+           "cardinality": "1..n",
+           "factors": []
+          }
+         ],
+         "axis": []
+        }
+       ],
        "outputSpecs": [],
        "outputSpecsV2": []
       }
@@ -805,7 +832,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "39a5669c-3934-4819-ad69-59d44d8cc8ad"
+    "id": "f9e33f7d-28f1-4f06-b1a1-29a7aa8d0102"
    },
    "parentDataStepId": ""
   },
@@ -1226,9 +1253,9 @@
      "namespace": "ds3",
      "operatorRef": {
       "kind": "OperatorRef",
-      "name": "pamsoft_grid_qt_operator",
-      "version": "1.4.2",
-      "operatorId": "2",
+      "name": "pamsoft_grid_qt_rust_operator",
+      "version": "0.2.12",
+      "operatorId": "5",
       "operatorKind": "DockerOperator",
       "propertyValues": [
        {
@@ -1253,13 +1280,18 @@
        },
        {
         "kind": "PropertyValue",
-        "name": "Spot Size",
-        "value": "0.66"
+        "name": "EdgeSensitivityLow",
+        "value": "0"
        },
        {
         "kind": "PropertyValue",
         "name": "Edge Sensitivity",
         "value": "0.05"
+       },
+       {
+        "kind": "PropertyValue",
+        "name": "Spot Size",
+        "value": "0.66"
        },
        {
         "kind": "PropertyValue",
@@ -1279,13 +1311,80 @@
       ],
       "url": {
        "kind": "Url",
-       "uri": "https://github.com/pamgene/pamsoft_grid_qt_operator"
+       "uri": "https://github.com/tercen/pamsoft_grid_qt_rust_operator"
       },
       "operatorSpec": {
        "kind": "OperatorSpec",
-       "ontologyUri": "",
-       "ontologyVersion": "",
-       "inputSpecs": [],
+       "ontologyUri": "https://tercen.com/_ontology/tercen",
+       "ontologyVersion": "0.0.1",
+       "inputSpecs": [
+        {
+         "kind": "CrosstabSpec",
+         "metaFactors": [
+          {
+           "kind": "MetaFactor",
+           "name": "Documents",
+           "type": "",
+           "description": "documentId column(s) referencing the input file(s): the image ZIP (and optionally the array-layout text file as a second documentId). 1 or 2 columns.",
+           "ontologyMapping": "documentId",
+           "crosstabMapping": "column",
+           "cardinality": "1..2",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Grid Reference Image",
+           "type": "",
+           "description": "grdImageNameUsed — the chip's reference image (constant per chip across cycles/exposures). Comes from the upstream pamsoft_grid step.",
+           "ontologyMapping": "sample",
+           "crosstabMapping": "column",
+           "cardinality": "1..1",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Image",
+           "type": "",
+           "description": "Image — filename stem of each individual image (one per .ci).",
+           "ontologyMapping": "sample",
+           "crosstabMapping": "column",
+           "cardinality": "1..1",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Grid Coordinates",
+           "type": "",
+           "description": "spotRow and spotCol — the integer grid row/column for each spot (also from upstream pamsoft_grid).",
+           "ontologyMapping": "",
+           "crosstabMapping": "column",
+           "cardinality": "2..2",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Spot ID",
+           "type": "",
+           "description": "ID — the spot identifier (e.g. peptide name, #REF for reference spots).",
+           "ontologyMapping": "",
+           "crosstabMapping": "column",
+           "cardinality": "1..1",
+           "factors": []
+          },
+          {
+           "kind": "MetaFactor",
+           "name": "Variable",
+           "type": "",
+           "description": "variable — the name of the gathered grid output column (gridX, gridY, diameter, grdRotation, grdXFixedPosition, grdYFixedPosition, bad, empty, manual). Produced by the upstream Gather/Melt step.",
+           "ontologyMapping": "",
+           "crosstabMapping": "row",
+           "cardinality": "1..1",
+           "factors": []
+          }
+         ],
+         "axis": []
+        }
+       ],
        "outputSpecs": [],
        "outputSpecsV2": []
       }
@@ -1355,7 +1454,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "bcf642e8-23e7-4519-9452-6a3bef1eec59"
+    "id": "01195874-dc5d-44b5-847d-ad752fac7b9e"
    },
    "parentDataStepId": ""
   },
@@ -1382,7 +1481,7 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 865.5050000000001,
+     "x": 866.5050000000001,
      "y": 234.5
     }
    },
@@ -1398,7 +1497,7 @@
     "kind": "TableStepModel",
     "relation": {
      "kind": "UnionRelation",
-     "id": "85a6a25f-a533-4fcc-b5f6-023164f767c8",
+     "id": "bc90f380-e398-488a-98c4-894e612012e1",
      "relations": []
     },
     "filterSelector": ""
@@ -1434,7 +1533,7 @@
     },
     "topLeft": {
      "kind": "Point",
-     "x": 979.0842187500002,
+     "x": 980.0842187500002,
      "y": 586.5
     }
    },
@@ -1724,8 +1823,8 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "Grid Checker",
-      "version": "0.0.2",
-      "operatorId": "3",
+      "version": "0.0.7",
+      "operatorId": "4",
       "operatorKind": "WebAppOperator",
       "propertyValues": [],
       "url": {
@@ -1806,7 +1905,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "ec26c4d2-ff2d-4398-a913-886e9f95d5df"
+    "id": "5e09cb80-e70d-4faa-a3b0-240c45aad0e3"
    },
    "parentDataStepId": ""
   },
@@ -2526,7 +2625,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "1727a04b-9097-423a-898b-309a3f34878f"
+    "id": "f9d377fb-02da-4f0c-ae58-15d48848c5a1"
    },
    "parentDataStepId": ""
   },
@@ -2764,7 +2863,7 @@
       "kind": "OperatorRef",
       "name": "Image Overview",
       "version": "0.0.2",
-      "operatorId": "4",
+      "operatorId": "1",
       "operatorKind": "WebAppOperator",
       "propertyValues": [],
       "url": {
@@ -2845,7 +2944,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "eeeb05d3-40b0-4216-b599-8355cf7610f7"
+    "id": "725d97cd-1294-423f-b863-c1d706c1beca"
    },
    "parentDataStepId": ""
   },
@@ -3022,7 +3121,7 @@
     "topLeft": {
      "kind": "Point",
      "x": 738.3862512207033,
-     "y": 774.5
+     "y": 775.5
     }
    },
    "state": {
@@ -3311,8 +3410,8 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "Grid Checker",
-      "version": "0.0.2",
-      "operatorId": "3",
+      "version": "0.0.7",
+      "operatorId": "4",
       "operatorKind": "WebAppOperator",
       "propertyValues": [],
       "url": {
@@ -3393,15 +3492,15 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "d58e79af-0b94-4223-9702-f76c872e7dff"
+    "id": "d928526e-3f58-4301-bcb2-feb307d90d78"
    },
    "parentDataStepId": ""
   }
  ],
  "offset": {
   "kind": "Point",
-  "x": -194.0,
-  "y": -142.0
+  "x": -156.0,
+  "y": -192.0
  },
  "scale": 1.0
 }
