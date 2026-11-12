@@ -1,6 +1,6 @@
 {
  "kind": "Workflow",
- "id": "5",
+ "id": "1",
  "isDeleted": false,
  "rev": "",
  "description": "image analysis STK",
@@ -333,9 +333,9 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "PS12 images",
-      "version": "1.2.2",
-      "operatorId": "0",
-      "operatorKind": "ROperator",
+      "version": "2.0.1",
+      "operatorId": "4",
+      "operatorKind": "DockerOperator",
       "propertyValues": [],
       "url": {
        "kind": "Url",
@@ -389,7 +389,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "327ae149-4c3c-4369-a516-3bb576b0e0c8"
+    "id": "7e7dc0b7-91ad-454b-a6b4-2c76f5f011b0"
    },
    "parentDataStepId": ""
   },
@@ -643,7 +643,7 @@
       }
      ],
      "rectangleSelections": [],
-     "nRows": 1
+     "nRows": 60
     },
     "filters": {
      "kind": "Filters",
@@ -677,8 +677,8 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "pamsoft_grid_rust_operator",
-      "version": "0.4.3",
-      "operatorId": "2",
+      "version": "0.4.5",
+      "operatorId": "5",
       "operatorKind": "DockerOperator",
       "propertyValues": [
        {
@@ -729,7 +729,7 @@
       ],
       "url": {
        "kind": "Url",
-       "uri": "https://github.com/tercen/pamsoft_grid_rust_operator"
+       "uri": "https://github.com/pamgene/pamsoft_grid_rust_operator"
       },
       "operatorSpec": {
        "kind": "OperatorSpec",
@@ -832,7 +832,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "170d962e-d090-4c29-88d5-410468cb1d05"
+    "id": "b6b61bcf-0488-4493-91d0-aedba8e92cbb"
    },
    "parentDataStepId": ""
   },
@@ -1254,8 +1254,8 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "pamsoft_grid_qt_rust_operator",
-      "version": "0.2.13",
-      "operatorId": "3",
+      "version": "0.2.16",
+      "operatorId": "6",
       "operatorKind": "DockerOperator",
       "propertyValues": [
        {
@@ -1311,7 +1311,7 @@
       ],
       "url": {
        "kind": "Url",
-       "uri": "https://github.com/tercen/pamsoft_grid_qt_rust_operator"
+       "uri": "https://github.com/pamgene/pamsoft_grid_qt_rust_operator"
       },
       "operatorSpec": {
        "kind": "OperatorSpec",
@@ -1454,7 +1454,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "96f8ccd7-e00e-4a8d-bbf6-edee4c26d551"
+    "id": "66aebeec-e22a-427e-9c2c-bc11928a1fd5"
    },
    "parentDataStepId": ""
   },
@@ -1497,7 +1497,7 @@
     "kind": "TableStepModel",
     "relation": {
      "kind": "UnionRelation",
-     "id": "42cca1b6-ecdd-4241-959e-76c7d62957e9",
+     "id": "de9f5bfb-5b60-4d49-a065-863ed07c3a49",
      "relations": []
     },
     "filterSelector": ""
@@ -1823,8 +1823,8 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "Grid Checker",
-      "version": "0.0.8",
-      "operatorId": "1",
+      "version": "0.0.11",
+      "operatorId": "3",
       "operatorKind": "WebAppOperator",
       "propertyValues": [
        {
@@ -1921,7 +1921,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "8a33464b-11a0-42ff-bdad-a7cf1224ef8a"
+    "id": "75f74ac0-d29d-4ed2-bdd6-e518b1144560"
    },
    "parentDataStepId": ""
   },
@@ -2641,7 +2641,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "84b4b71c-e907-45fe-8cd7-076cc8d717b3"
+    "id": "5306c640-aa47-4180-bd36-d76883e6ee14"
    },
    "parentDataStepId": ""
   },
@@ -2879,7 +2879,7 @@
       "kind": "OperatorRef",
       "name": "Image Overview",
       "version": "0.0.3",
-      "operatorId": "6",
+      "operatorId": "2",
       "operatorKind": "WebAppOperator",
       "propertyValues": [],
       "url": {
@@ -2960,7 +2960,7 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "f1741c71-a1c0-4bf5-8f04-90e4f91bbd1b"
+    "id": "ecdd4252-bd8b-4b11-ab18-8af507196f05"
    },
    "parentDataStepId": ""
   },
@@ -3426,8 +3426,8 @@
      "operatorRef": {
       "kind": "OperatorRef",
       "name": "Grid Checker",
-      "version": "0.0.8",
-      "operatorId": "1",
+      "version": "0.0.11",
+      "operatorId": "3",
       "operatorKind": "WebAppOperator",
       "propertyValues": [
        {
@@ -3524,15 +3524,15 @@
    },
    "computedRelation": {
     "kind": "Relation",
-    "id": "95a45724-afff-4baf-a751-75b5075adca9"
+    "id": "6f9bac2f-ae25-43b7-83ca-00e99ec8923b"
    },
    "parentDataStepId": ""
   }
  ],
  "offset": {
   "kind": "Point",
-  "x": -153.0,
-  "y": -202.0
+  "x": -326.0,
+  "y": -222.0
  },
  "scale": 1.0
 }
